@@ -1,8 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Максим Афонасьев](https://up.htmlacademy.ru/htmlcss/21/user/632625).
-* Наставник: [Сергей Козлов]
-(https://up.htmlacademy.ru/htmlcss/21/user/27386).
+* Наставник: [Сергей Козлов](https://up.htmlacademy.ru/htmlcss/21/user/27386).
 
 ---
 
