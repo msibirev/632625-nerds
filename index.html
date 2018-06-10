@@ -22,7 +22,7 @@
 		</nav>
 	</header>
 	<main class="container">
-  	  
+
 		<h1 class="visually-hidden">Дизайн-студия «Нёрдс»</h1>
 
 		<section class="presentation">
@@ -43,14 +43,14 @@
 					<a href="#" class="button presentation-button">Узнать больше</a>
 				</li>
 			</ul>
-	  
+
 			<div class="presentation-slider">
 				<input type="radio" name="first-slider" id="presentation-first-slider" checked="checked">
 				<label for="presentation-first-slider"></label>
 				<input type="radio" name="second-slider" id="presentation-second-slider">
-				<label for="presentation-first-slider"></label>
+				<label for="presentation-second-slider"></label>
 				<input type="radio" name="third-slider" id="presentation-third-slider">
-				<label for="presentation-first-slider"></label>
+				<label for="presentation-third-slider"></label>
 			</div>
 
 		</section>
@@ -93,7 +93,7 @@
 			</div>
 
 			<div class="about-us-statistics">
-				<img src="http://placehold.it/150x100" alt="Изображение дизайн-студии «Нёрдс»">
+				<img src="img/nerds-illustration.png" width="360" height="208" alt="Изображение дизайн-студии «Нёрдс»">
 				<p class="about-us-statistics-title uppercase"><b>С 2004 года любим точность во всем всем:</b></p>
 				<table class="table-statistics">
 					<tr class="table-statistics-header">
@@ -114,17 +114,17 @@
 		<section class="partners">
 			<h2 class="visually-hidden">Партнёры</h2>
 			<ul class="partners-list">
-				<li class="partners-list-images"><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="http://placehold.it/150x100" alt="Изображение партнёра «HTML Academy»"></a></li>
-				<li class="partners-list-images"><a href="#"><img src="http://placehold.it/150x100" alt="Изображение партнёра «Barbershop BORODINSKI»"></a></li>
-				<li class="partners-list-images"><a href="#"><img src="http://placehold.it/150x100" alt="Изображение партнёра «PINK»"></a></li>
-				<li class="partners-list-images"><a href="#"><img src="http://placehold.it/150x100" alt="Изображение партнёра «MISHKA»"></a></li>
+				<li class="partners-list-images"><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.png" width="199" height="68" alt="Изображение партнёра «HTML Academy»"></a></li>
+				<li class="partners-list-images"><a href="#"><img src="img/logo-borodinski.png" width="209" height="90" alt="Изображение партнёра «Barbershop BORODINSKI»"></a></li>
+				<li class="partners-list-images"><a href="#"><img src="img/logo-pink.png" width="185" height="52" alt="Изображение партнёра «PINK»"></a></li>
+				<li class="partners-list-images"><a href="#"><img src="img/logo-mishka.png" width="173" height="84" alt="Изображение партнёра «MISHKA»"></a></li>
 			</ul>
 		</section>
 
 		<section class="map">
 			<h2 class="visually-hidden">Наше местоположение</h2>
-			<img  class="map-image" src="http://placehold.it/150x100" alt="Изображение карты">
-	    
+			<img  class="map-image" src="img/map.jpg" width="1440" height="416" alt="Изображение карты">
+
 			<div class="map-item">
 				<p class="map-item-header uppercase"><b>nёrds design studio</b></p>
 				<p class="map-item-address">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
@@ -132,16 +132,35 @@
 				<button type="button" class="button map-item-button">Напишите нам</button>
 			</div>
 
+			<div class="popup">
+				<h2>Напишите нам</h2>
+				<button type="button" class="popup-close-button" aria-label="Закрыть"></button>
+				<form class="popup-form">
+					<label class="popup-form-name">
+						Ваше имя:
+						<input type="text" id="name" placeholder="Имя Фамилия">
+					</label>
+					<label class="popup-form email">
+						Ваш e-mail:
+						<input type="text" id="email" placeholder="email@example.com">
+					</label>
+					<label class="popup-form-letter">
+						Текст письма:
+						<textarea name="letter-text" id="letter" rows="5"></textarea>
+					</label>
+				</form>
+			</div>
+
 		</section>
 
 	</main>
 	<footer class="main-footer">
-  		
+
 		<section class="footer-socials">
 			<ul>
-				<li><a href="#" class="social-button">Вконтакте</a></li>
-				<li><a href="#" class="social-button">Фейсбук</a></li>
-				<li><a href="#" class="social-button">Инстаграм</a></li>
+				<li><a href="#" class="social-button vk-button" aria-label="Вконтакте"></a></li>
+				<li><a href="#" class="social-button fb-button" aria-label="Фейсбук"></a></li>
+				<li><a href="#" class="social-button insta-button" aria-label="Инстаграм"></a></li>
 			</ul>
 		</section>
 
