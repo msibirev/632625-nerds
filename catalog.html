@@ -27,7 +27,7 @@
 		<section class="filters">
 			<h2 class="visually-hidden">Фильтр товаров</h2>
 			<form>
-			<h3 class="range-title uppercase">Стоимость:</h3>
+			  <h3 class="range-title uppercase">Стоимость:</h3>
 
 				<div class="range-filters">
 
@@ -70,7 +70,7 @@
 						<label for="basket">Корзина</label>
 				</fieldset>
 
-				<button class="button show-button">Показать</button>
+				<button type="button" class="button show-button">Показать</button>
 			</form>
 		</section>
 
@@ -155,26 +155,7 @@
 				<p class="map-item-header uppercase"><b>nёrds design studio</b></p>
 				<p class="map-item-address">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
 				<p class="map-item-phone">тел. +7(812)275-75-75</p>
-				<button type="button" class="button map-item-button">Напишите нам</button>
-			</div>
-
-			<div class="popup">
-				<h2>Напишите нам</h2>
-				<button type="button" class="popup-close-button" aria-label="Закрыть"></button>
-				<form class="popup-form">
-					<label class="popup-form-name">
-						Ваше имя:
-						<input type="text" id="name" placeholder="Имя Фамилия">
-					</label>
-					<label class="popup-form email">
-						Ваш e-mail:
-						<input type="text" id="email" placeholder="email@example.com">
-					</label>
-					<label class="popup-form-letter">
-						Текст письма:
-						<textarea name="letter-text" id="letter" rows="5"></textarea>
-					</label>
-				</form>
+				<a href="#" class="button map-item-button">Напишите нам</a>
 			</div>
 
 		</section>
@@ -196,5 +177,25 @@
 		</section>
 
 	</footer>
+
+    <div class="popup">
+      <h2>Напишите нам</h2>
+      <button type="button" class="popup-close-button" aria-label="Закрыть"></button>
+      <form class="popup-form">
+        <label class="popup-form-name">
+           Ваше имя:
+           <input type="text" id="name" placeholder="Имя Фамилия">
+         </label>
+         <label class="popup-form email">
+           Ваш e-mail:
+           <input type="text" id="email" placeholder="email@example.com">
+         </label>
+         <label class="popup-form-letter">
+          Текст письма:
+          <textarea name="letter-text" id="letter" rows="5"></textarea>
+         </label>
+      </form>
+    </div>
+
 	</body>
 </html>
