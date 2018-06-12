@@ -123,7 +123,7 @@
 
 		<section class="map">
 			<h2 class="visually-hidden">Наше местоположение</h2>
-			<img  class="map-image" src="img/map.img" width="1440" height="416" alt="Изображение карты">
+			<img  class="map-image" src="img/map.png" width="1440" height="416" alt="Изображение карты">
 
 			<div class="map-item">
 				<p class="map-item-header uppercase"><b>nёrds design studio</b></p>
@@ -152,24 +152,25 @@
 
 	</footer>
 
-    <div class="popup">
-        <h2>Напишите нам</h2>
-        <button type="button" class="popup-close-button" aria-label="Закрыть"></button>
-        <form class="popup-form">
-          <label class="popup-form-name">
-            Ваше имя:
-            <input type="text" id="name" placeholder="Имя Фамилия">
-          </label>
-          <label class="popup-form email">
-            Ваш e-mail:
-            <input type="text" id="email" placeholder="email@example.com">
-          </label>
-          <label class="popup-form-letter">
-            Текст письма:
-            <textarea name="letter-text" id="letter" rows="5"></textarea>
-          </label>
-        </form>
-    </div>
+		<div class="popup">
+			<h2>Напишите нам</h2>
+			<button type="button" class="popup-close-button" aria-label="Закрыть"></button>
+			<form method="get" class="popup-form">
+				<label class="popup-form-name">
+					Ваше имя:
+					<input type="text" id="name" placeholder="Имя Фамилия">
+				</label>
+				<label class="popup-form email">
+					Ваш e-mail:
+					<input type="text" id="email" placeholder="email@example.com">
+				</label>
+				<label class="popup-form-letter">
+					Текст письма:
+					<textarea name="letter-text" id="letter" rows="5"></textarea>
+				</label>
+			</form>
+			<a href="#" class="button popup-send-button">Отправить</a>
+		</div>
 
 	</body>
 </html>
