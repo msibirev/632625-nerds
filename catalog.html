@@ -26,7 +26,7 @@
 
 		<section class="filters">
 			<h2 class="visually-hidden">Фильтр товаров</h2>
-			<form method="get" class="filters-form">
+			<form method="get" class="filters-form" name="filters">
 			  <h3 class="range-title uppercase">Стоимость:</h3>
 
 				<div class="range-filters">
@@ -48,26 +48,34 @@
 
 				<fieldset class="grid-filters">
 					<legend class="grid-title uppercase">Сетка:</legend>
+
+					<div class="grid-block">
 						<input type="radio" name="grid-option" id="adaptive" checked>
 						<label for="adaptive">Адаптивная</label>
 						<input type="radio" name="grid-option" id="fix">
 						<label for="fix">Фиксированная</label>
 						<input type="radio" name="grid-option" id="flex">
 						<label for="flex">Резиновая</label>
+					</div>
+
 				</fieldset>
 
 				<fieldset class="features-filters">
 					<legend class="features-title uppercase">Особенности:</legend>
+
+					<div class="features-block">
 						<input type="checkbox" id="slider" checked>
 						<label for="slider">Слайдер</label>
 						<input type="checkbox" id="features-block">
-						<label for="ftrs">Блок преимуществ</label>
+						<label for="features">Блок преимуществ</label>
 						<input type="checkbox" id="news" checked>
 						<label for="news">Новости</label>
 						<input type="checkbox" id="gallery">
 						<label for="galery">Галерея</label>
 						<input type="checkbox" id="basket">
 						<label for="basket">Корзина</label>
+					</div>
+
 				</fieldset>
 
 				<button type="button" class="button show-button">Показать</button>
@@ -181,14 +189,14 @@
 		<div class="popup">
 			<h2>Напишите нам</h2>
 			<button type="button" class="popup-close-button" aria-label="Закрыть"></button>
-			<form method="get" class="popup-form">
+			<form method="get" class="popup-form" name="popup">
 				<label class="popup-form-name">
 					Ваше имя:
-					<input type="text" id="name" placeholder="Имя Фамилия">
+					<input name="name-text" type="text" id="name" placeholder="Имя Фамилия">
 				</label>
 				<label class="popup-form email">
 					Ваш e-mail:
-					<input type="text" id="email" placeholder="email@example.com">
+					<input name="email-text" type="text" id="email" placeholder="email@example.com">
 				</label>
 				<label class="popup-form-letter">
 					Текст письма:
