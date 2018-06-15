@@ -158,18 +158,18 @@
   <div class="popup">
     <h2>Напишите нам</h2>
     <button type="button" class="popup-close-button" aria-label="Закрыть"></button>
-    <form method="get" class="popup-form" name="popup">
+    <form method="post" class="popup-form" name="popup">
       <label class="popup-form-name">
         <span>Ваше имя:</span>
         <input name="name-text" type="text" id="name" placeholder="Имя Фамилия">
       </label>
       <label class="popup-form email">
         <span>Ваш e-mail:</span>
-        <input name="email-text" type="text" id="mail" placeholder="email@example.com">
+        <input name="email-text" type="email" id="mail" placeholder="email@example.com">
       </label>
       <label class="popup-form-letter">
         <span>Текст письма:</span>
-        <textarea name="letter-text" id="letter" rows="5"></textarea>
+        <textarea name="letter-text" id="letter"></textarea>
       </label>
     </form>
     <a href="#" class="button popup-send-button">Отправить</a>

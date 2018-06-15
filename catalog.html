@@ -68,21 +68,21 @@
           <legend class="features-title uppercase"><b>Особенности:</b></legend>
 
           <div class="features-block">
-            <input type="checkbox" id="slider" value="slider-selected" checked>
+            <input type="checkbox" name="features-option" id="slider" value="slider-selected" checked>
             <label for="slider">Слайдер</label>
-            <input type="checkbox" id="features-block" value="features-selected">
+            <input type="checkbox" name="features-option" id="features-block" value="features-selected">
             <label for="features">Блок преимуществ</label>
-            <input type="checkbox" id="news" value="news-selected" checked>
+            <input type="checkbox" name="features-option" id="news" value="news-selected" checked>
             <label for="news">Новости</label>
-            <input type="checkbox" id="gallery" value="gallery-selected">
+            <input type="checkbox" name="features-option" id="gallery" value="gallery-selected">
             <label for="galery">Галерея</label>
-            <input type="checkbox" id="basket" value="basket-selected">
+            <input type="checkbox" name="features-option" id="basket" value="basket-selected">
             <label for="basket">Корзина</label>
           </div>
 
         </fieldset>
 
-        <button type="button" class="button show-button">Показать</button>
+        <button type="submit" class="button show-button">Показать</button>
       </form>
     </section>
 
@@ -193,18 +193,18 @@
   <div class="popup">
     <h2>Напишите нам</h2>
     <button type="button" class="popup-close-button" aria-label="Закрыть"></button>
-    <form method="get" class="popup-form" name="popup">
+    <form method="post" class="popup-form" name="popup">
       <label class="popup-form-name">
         <span>Ваше имя:</span>
         <input name="name-text" type="text" id="name" placeholder="Имя Фамилия">
       </label>
       <label class="popup-form email">
         <span>Ваш e-mail:</span>
-        <input name="email-text" type="text" id="mail" placeholder="email@example.com">
+        <input name="email-text" type="email" id="mail" placeholder="email@example.com">
       </label>
       <label class="popup-form-letter">
         <span>Текст письма:</span>
-        <textarea name="letter-text" id="letter" rows="5"></textarea>
+        <textarea name="letter-text" id="letter"></textarea>
       </label>
     </form>
     <a href="#" class="button popup-send-button">Отправить</a>
