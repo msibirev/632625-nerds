@@ -310,3 +310,43 @@ a {
 .pagination-item a:focus {
   background-color: #dfdfdf;
 }
+
+/* Flex Box */
+
+.main-header {
+  margin-bottom: 18px;
+}
+
+.main-navigation {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-header-logo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.site-navigation {
+  width: 440px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.basket-navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+}
+
+.presentation {}
+
+.amenities {
+  display: flex;
+}
