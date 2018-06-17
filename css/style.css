@@ -82,12 +82,39 @@ a {
   background-color: #e74246;
 }
 
+.presentation-first {
+  background-image: url(../img/slide-approach.png);
+}
+
+.presentation-second {
+  background-image: url(../img/slide-math.png);
+}
+
+.presentation-third {
+  background-image: url(../img/slide-night.png);
+}
+
 .amenities h3 {
   font-size: 24px;
 }
 
 .amenities-item-text {
   color: #283136;
+}
+
+.web-sites {
+  background-color: #fb565a;
+  background-image: url(../img/illustration-monitor.jpg)
+}
+
+.apps {
+  background-color: #00ca74;
+  background-image: url(../img/illustration-phones.jpg);
+}
+
+.presentations {
+  background-color: #efc849;
+  background-image: url(../img/illustration-schedule.jpg);
 }
 
 .web-sites-button {
@@ -341,12 +368,33 @@ a {
   align-items: center;
 }
 
-.container {
+.presentation-block {
+  display: flex;
+  flex: 1 1 400px;
+  padding-top: 60px;
+  margin-bottom: 80px;
+}
+
+.amenities {
+  padding-bottom: 42px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.amenities-item {
+  width: 300px;
+  margin-bottom: 40px;
+}
+
+.about-us {
   display: flex;
 }
 
-.presentation {}
+.about-us-item {
+  width 660px;
+  margin-left: 20px;
+}
 
-.amenities {
-  display: flex;
+.about-us-statistics {
 }
