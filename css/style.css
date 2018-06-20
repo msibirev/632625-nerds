@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  min-width: 1200px;
 
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
@@ -15,13 +16,16 @@ a {
 
 .visually-hidden {
   position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  height: 1px;
   width: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
+  height: 1px;
+  clip: rect(0, 0, 0, 0);
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .uppercase,
@@ -30,17 +34,45 @@ a {
 }
 
 .button {
+  display: block;
+  width: 240px;
+  padding: 13px 0;
+
+  font-size: 16px;
+  line-height: 18px;
   color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+
+  border-radius: 3px;
+  border: none;
+}
+
+.main-header {
+  background-color: #eeeeee;
 }
 
 .main-navigation {
   color: #000000;
 
-  background-color: #eeeeee;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-header-logo {
+  padding-top: 49px;
+}
+.site-navigation {
+  width: 440px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .site-navigation,
 .basket-navigation {
+  margin: 0;
+  padding-top: 82px;
   list-style: none;
 }
 
@@ -57,19 +89,39 @@ a {
 }
 
 .presentation {
-  background-color: #eeeeee;
+  position: relative;
 }
 
 .presentation-block {
+  margin: 0px;
+  padding: 0px;
+
   list-style: none;
 }
 
+.presentation-item {
+  display: none;
+  padding: 78px 0 80px 0;
+}
+
+.presentation-item:nth-child(1) {
+  display: block;
+}
+
 .presentation-title {
+  max-width: 600px;
+  margin: 0;
+  margin-bottom: 27px;
+
   font-size: 55px;
   line-height: 55px;
 }
 
 .presentation-body {
+  max-width: 430px;
+  margin: 0;
+  margin-bottom: 38px;
+
   color: #283136;
 }
 
@@ -82,16 +134,81 @@ a {
   background-color: #e74246;
 }
 
+.presentation-slider i {
+  position: relative;
+
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  padding: 8px;
+
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.presentation-slider {
+  position: absolute;
+  left: 50%;
+  bottom: 104px;
+  z-index: 100;
+
+  width: 160px;
+  height: 18px;
+
+  text-align: center;
+  font-size: 0;
+  transform: translateX(-50%);
+}
+
+.presentation-slider i::after {
+  content: "";
+
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 1;
+
+  width: 18px;
+  height: 18px;
+
+  background: #ffffff;
+
+  border-radius: 50%;
+}
+
+.presentation-slider .active::before {
+  content: "";
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+
+  width: 4px;
+  height: 4px;
+  margin: -4px;
+
+  background-color: inherit;
+  border: 2px solid #c1c1c1;
+  border-radius: 50%;
+}
+
 .presentation-first {
   background-image: url(../img/slide-approach.png);
+  background-repeat: no-repeat;
+  background-position: 93% 18px;
 }
 
 .presentation-second {
   background-image: url(../img/slide-math.png);
+  background-repeat: no-repeat;
+  background-position: 100% 0;
 }
 
 .presentation-third {
   background-image: url(../img/slide-night.png);
+  background-repeat: no-repeat;
+  background-position: 100% 20px;
 }
 
 .amenities h3 {
@@ -104,17 +221,20 @@ a {
 
 .web-sites {
   background-color: #fb565a;
-  background-image: url(../img/illustration-monitor.jpg)
+  background-image: url(../img/illustration-monitor.jpg);
+  background-repeat: no-repeat;
 }
 
 .apps {
   background-color: #00ca74;
   background-image: url(../img/illustration-phones.jpg);
+  background-repeat: no-repeat;
 }
 
 .presentations {
   background-color: #efc849;
   background-image: url(../img/illustration-schedule.jpg);
+  background-repeat: no-repeat;
 }
 
 .web-sites-button {
@@ -339,62 +459,3 @@ a {
 }
 
 /* Flex Box */
-
-.main-header {
-  margin-bottom: 18px;
-}
-
-.main-navigation {
-  display: flex;
-  justify-content: space-around;
-}
-
-.main-header-logo {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.site-navigation {
-  width: 440px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.basket-navigation {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.presentation-block {
-  display: flex;
-  flex: 1 1 400px;
-  padding-top: 60px;
-  margin-bottom: 80px;
-}
-
-.amenities {
-  padding-bottom: 42px;
-  margin-bottom: 40px;
-  display: flex;
-  justify-content: space-around;
-}
-
-.amenities-item {
-  width: 300px;
-  margin-bottom: 40px;
-}
-
-.about-us {
-  display: flex;
-}
-
-.about-us-item {
-  width 660px;
-  margin-left: 20px;
-}
-
-.about-us-statistics {
-}
