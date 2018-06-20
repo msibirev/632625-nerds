@@ -64,6 +64,7 @@ a {
 .main-header-logo {
   padding-top: 49px;
 }
+
 .site-navigation {
   width: 440px;
   display: flex;
@@ -340,13 +341,13 @@ a {
 .map {
   margin-top: 80px;
   margin-bottom: 70px;
-  position: relative;
 }
+
+.map-image-wrapper {}
 
 .map-item {
   background-color: #ffffff;
   width: 320px;
-  position: absolute;
 }
 
 .map-item-header {
@@ -393,6 +394,10 @@ a {
 .friendly-body {
   color: #444444;
   line-height: 22px;
+}
+
+.popup {
+  display: none;
 }
 
 .popup h2 {
