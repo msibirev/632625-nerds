@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  min-width: 1200px;
 
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
@@ -50,6 +49,12 @@ a {
   border: none;
 }
 
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+}
+
 .main-header {
   background-color: #eeeeee;
 }
@@ -69,10 +74,6 @@ a {
   width: 440px;
   display: flex;
   justify-content: space-around;
-}
-
-.basket-navigation {
-  padding-right: 20px;
 }
 
 .site-navigation,
@@ -138,6 +139,10 @@ a {
 .presentation-button:hover,
 .presentation-button:focus {
   background-color: #e74246;
+}
+
+.presentation-button:active {
+  background-color: #d7373b;
 }
 
 .presentation-slider i {
@@ -232,10 +237,13 @@ a {
 
 .amenities h3 {
   font-size: 24px;
+  margin-top: 30px;
+  margin-bottom: 25px;
 }
 
 .amenities-item-text {
   color: #283136;
+  margin-bottom: 35px;
 }
 
 .web-sites,
@@ -272,6 +280,10 @@ a {
   background-color: #e74246;
 }
 
+.web-sites-button:active {
+  background-color: #d7373b;
+}
+
 .apps-button {
   background-color: #00ca74;
   width: 160px;
@@ -280,6 +292,10 @@ a {
 .apps-button:hover,
 .apps-button:focus {
   background-color: #00bc6c;
+}
+
+.apps-button:active {
+  background-color: #00aa62;
 }
 
 .presentations-button {
@@ -292,6 +308,10 @@ a {
   background-color: #eab534;
 }
 
+.presentations-button:active {
+  background-color: #e5a722;
+}
+
 .about-us {
   display: flex;
   justify-content: space-between;
@@ -302,10 +322,12 @@ a {
 .about-us-item-header {
   font-size: 45px;
   line-height: 45px;
+  margin-bottom: 40px;
 }
 
 .about-us-item-body {
   color: #283136;
+  margin-bottom: 40px;
 }
 
 .about-us-item-list {
@@ -313,13 +335,23 @@ a {
   color: #283136;
 }
 
+.about-us-statistics img {
+  margin-bottom: 30px;
+}
+
 .table-statistics-header b {
   font-size: 45px;
   line-height: 10px;
+  margin-bottom: 20px;
+}
+
+p.about-us-statistics-title {
+  margin-bottom: 50px;
 }
 
 .table-statistics-body td {
   color: #283136;
+  line-height: 18px;
 }
 
 .partners {
@@ -338,31 +370,67 @@ a {
   margin-bottom: 48px;
 }
 
-.map {
-  margin-top: 80px;
-  margin-bottom: 70px;
+.partners-list-images img {
+  opacity: 0.2;
 }
 
-.map-image-wrapper {}
+.partner-html:hover,
+.partner-html:focus,
+.partner-borodinski:hover,
+.partner-borodinski:focus,
+.partner-pink:hover,
+.partner-pink:focus,
+.partner-mishka:hover,
+.partner-mishka:focus {
+  opacity: 1;
+}
+
+.map {
+  position: relative;
+  margin-top: 80px;
+  margin-bottom: 70px;
+  padding: 81px 0;
+}
+
+.map-image-wrapper {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
 
 .map-item {
   background-color: #ffffff;
   width: 320px;
+  min-height: 240px;
+  padding-top: 47px;
 }
 
 .map-item-header {
+  margin-top: 0;
   font-size: 18px;
   line-height: 30px;
+  margin-left: 50px;
+  margin-bottom: 30px;
 }
 
 .map-item-address,
 .map-item-phone {
   line-height: 18px;
   color: #666666;
+  margin-left: 50px;
+}
+
+.map-item-phone {
+  margin-bottom: 40px;
 }
 
 .map-item-button {
   background-color: #fb565a;
+  margin-left: 50px;
+  width: 220px;
 }
 
 .map-item-button:hover,
@@ -370,20 +438,57 @@ a {
   background-color: #e74246;
 }
 
+.map-item-button:active {
+  background-color: #d7373b;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
 .social-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding-left: 25px;
+  width: 260px;
   list-style: none;
 }
 
-.main-footer {
+.social-button {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
+  width: 79px;
+  height: 79px;
+  background-color: #eeeeee;
+  margin-right: 11px;
+  border-radius: 50%;
 }
 
-.footer-socials {
-  width: 260px;
-  height: 80px;
-  background-color: black;
-  margin-right: 140px;
+.social-button:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #d7373b;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+}
+
+.vk-button:hover,
+.vk-button:focus,
+.fb-button:hover,
+.fb-button:focus,
+.insta-button:hover,
+.insta-button:focus {
+  background-color: #e74246;
+}
+
+.fiendly-message {
+  width: 560px;
+}
+
+div.friendly-message {
+  padding-right: 200px;
 }
 
 .friendly-header {
@@ -418,6 +523,10 @@ a {
   background-color: #e74246;
 }
 
+.popup-send-button:active {
+  background-color: #d7373b;
+}
+
 /* catalog.html */
 
 .page-title {
@@ -425,21 +534,110 @@ a {
   font-size: 55px;
   line-height: 55px;
   background-color: #eeeeee;
+
+  margin-top: 80px;
+  padding-bottom: 115px;
 }
 
-.range-title {
-  font-size: 18px;
-  line-height: 30px;
-}
+.filter-item {
+  margin: 0;
+  padding: 0;
 
-.range-filters-price span {
-  line-height: 22px;
-  color: #283136;
-}
-
-.grid-filters,
-.features-filters {
   border: none;
+}
+
+.range-filter {
+  width: 260px;
+  margin-top: 49px;
+}
+
+.filter-item legend {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.range-controls {
+  position: relative;
+
+  height: 41px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  background-color: #f1f1f1;
+
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+
+  width: 4px;
+  height: 4px;
+  padding: 0;
+
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  display: inline-block;
+  width: 50%;
+
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.price-controls input {
+  width: 60px;
+  padding: 8px 10px;
+  margin-left: 10px;
+
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #283136;
+
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.max-price {
+  text-align: right;
 }
 
 .grid-title {
@@ -532,5 +730,3 @@ a {
 .pagination-item a:focus {
   background-color: #dfdfdf;
 }
-
-/* Flex Box */

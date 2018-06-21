@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+
+<head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
@@ -10,47 +11,60 @@
 
 <body>
   <header class="main-header">
-    <nav class="main-navigation uppercase">
-      <a href="index.html" class="main-header-logo">
+
+    <div class="container">
+      <nav class="main-navigation uppercase">
+        <a href="index.html" class="main-header-logo">
         <img src="img/svg/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии «Нёрдс»">
       </a>
-      <ul class="site-navigation">
-        <li><a href="#">Студия</a></li>
-        <li><a href="#">Клиенты</a></li>
-        <li><a href="catalog.html" class="site-navigation-current">Магазин</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-      <ul class="basket-navigation">
-        <li class="basket-link"><a href="#">Корзина</a></li>
-      </ul>
-    </nav>
+        <ul class="site-navigation">
+          <li><a href="#">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li><a href="catalog.html" class="site-navigation-current">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <ul class="basket-navigation">
+          <li class="basket-link"><a href="#">Корзина</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <h1 class="page-title">Магазин готовых шаблонов</h1>
   </header>
   <main class="container">
-    <h1 class="page-title">Магазин готовых шаблонов</h1>
 
     <section class="filters">
       <h2 class="visually-hidden">Фильтр товаров</h2>
       <form method="get" class="filters-form" name="filters">
-        <h3 class="range-title uppercase">Стоимость:</h3>
 
-        <div class="range-filters">
+        <fieldset class="filter-item">
+          <legend class="range-title uppercase"><b>Стоимость:</b></legend>
 
-          <div class="range-filters-circles"></div>
+          <div class="range-filter">
 
-          <div class="range-filters-price">
-            <label class="min-price">
-              <span>ОТ</span>
-              <input type="text" name="price-from" placeholder="0">
-            </label>
-            <label class="max-price">
-              <span>ДО</span>
-              <input type="text" name="price-to" placeholder="15 000">
-            </label>
+            <div class="range-controls">
+
+              <div class="scale">
+
+                <div class="bar"></div>
+
+              </div>
+
+              <div class="toggle toggle-min"></div>
+
+              <div class="toggle toggle-max"></div>
+
+            </div>
+
+            <div class="price-controls">
+              <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+              <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+            </div>
+
           </div>
+        </fieldset>
 
-        </div>
-
-        <fieldset class="grid-filters">
+        <fieldset class="filter-item">
           <legend class="grid-title uppercase"><b>Сетка:</b></legend>
 
           <div class="grid-block">
@@ -64,7 +78,7 @@
 
         </fieldset>
 
-        <fieldset class="features-filters">
+        <fieldset class="filter-item">
           <legend class="features-title uppercase"><b>Особенности:</b></legend>
 
           <div class="features-block">
@@ -211,5 +225,5 @@
   </div>
 
 </body>
-</html>
 
+</html>
