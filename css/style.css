@@ -83,6 +83,11 @@ a {
   list-style: none;
 }
 
+.basket-link::before {
+  content: "";
+  background-image: url(../img/svg/cart-icon.svg);
+}
+
 .site-navigation a,
 .basket-navigation a {
   color: #000000;
