@@ -70,6 +70,10 @@ a {
   padding-top: 49px;
 }
 
+.main-header-logo:active {
+  opacity: 0.3;
+}
+
 .site-navigation {
   width: 440px;
   display: flex;
@@ -83,8 +87,21 @@ a {
   list-style: none;
 }
 
+.basket-link {
+  position: relative;
+  width: 160px;
+}
+
 .basket-link::before {
-  content: "";
+  content: " ";
+
+  position: absolute;
+  top: 5px;
+  left: -40px;
+
+  width: 15px;
+  height: 15px;
+
   background-image: url(../img/svg/cart-icon.svg);
 }
 
@@ -98,6 +115,11 @@ a {
 .basket-navigation a:hover,
 .basket-navigation a:focus {
   color: #fb565a;
+}
+
+.site-navigation a:active,
+.basket-navigation a:active {
+  color: #a6a6a6;
 }
 
 .presentation {
@@ -488,13 +510,11 @@ p.about-us-statistics-title {
   background-color: #e74246;
 }
 
-.fiendly-message {
+.friendly-message {
   width: 560px;
-}
-
-div.friendly-message {
   padding-right: 200px;
 }
+
 
 .friendly-header {
   font-size: 36px;
