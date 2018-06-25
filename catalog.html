@@ -3,13 +3,13 @@
 
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Нёрдс</title>
+  <title>Магазин шаблонов</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="inner-page">
   <header class="main-header">
 
     <div class="container">
@@ -39,7 +39,7 @@
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form method="get" class="filters-form" name="filters">
 
-          <fieldset class="filter-item">
+          <fieldset class="filter-item filter-price">
             <legend class="range-title uppercase"><b>Стоимость:</b></legend>
 
             <div class="range-filter">
@@ -69,32 +69,48 @@
           <fieldset class="filter-item">
             <legend class="grid-title uppercase"><b>Сетка:</b></legend>
 
-            <div class="grid-block">
-              <input type="radio" name="grid-option" id="adaptive" value="adaptive-selected" checked>
-              <label for="adaptive">Адаптивная</label>
-              <input type="radio" name="grid-option" id="fix" value="fix-selected">
-              <label for="fix">Фиксированная</label>
-              <input type="radio" name="grid-option" id="flex" value="flex-selected">
-              <label for="flex">Резиновая</label>
-            </div>
+            <ul class="grid-list">
+              <li>
+                <input type="radio" name="grid-option" id="adaptive" value="adaptive-selected" checked>
+                <label for="adaptive">Адаптивная</label>
+              </li>
+              <li>
+                <input type="radio" name="grid-option" id="fix" value="fix-selected">
+                <label for="fix">Фиксированная</label>
+              </li>
+              <li>
+                <input type="radio" name="grid-option" id="flex" value="flex-selected">
+                <label for="flex">Резиновая</label>
+              </li>
+            </ul>
 
           </fieldset>
 
           <fieldset class="filter-item">
             <legend class="features-title uppercase"><b>Особенности:</b></legend>
 
-            <div class="features-block">
-              <input type="checkbox" name="features-option" id="slider" value="slider-selected" checked>
-              <label for="slider">Слайдер</label>
-              <input type="checkbox" name="features-option" id="features-block" value="features-selected">
-              <label for="features">Блок преимуществ</label>
-              <input type="checkbox" name="features-option" id="news" value="news-selected" checked>
-              <label for="news">Новости</label>
-              <input type="checkbox" name="features-option" id="gallery" value="gallery-selected">
-              <label for="galery">Галерея</label>
-              <input type="checkbox" name="features-option" id="basket" value="basket-selected">
-              <label for="basket">Корзина</label>
-            </div>
+            <ul class="features-list">
+              <li>
+                <input type="checkbox" name="features-option" id="slider" value="slider-selected" checked>
+                <label for="slider">Слайдер</label>
+              </li>
+              <li>
+                <input type="checkbox" name="features-option" id="features-block" value="features-selected">
+                <label for="features">Блок преимуществ</label>
+              </li>
+              <li>
+                <input type="checkbox" name="features-option" id="news" value="news-selected" checked>
+                <label for="news">Новости</label>
+              </li>
+              <li>
+                <input type="checkbox" name="features-option" id="gallery" value="gallery-selected">
+                <label for="galery">Галерея</label>
+              </li>
+              <li>
+                <input type="checkbox" name="features-option" id="basket" value="basket-selected">
+                <label for="basket">Корзина</label>
+              </li>
+            </ul>
 
           </fieldset>
 

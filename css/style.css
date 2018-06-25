@@ -397,9 +397,23 @@ p.about-us-statistics-title {
   margin-bottom: 48px;
 }
 
+/*.partners-list-images {
+  position: relative;
+}*/
+
 .partners-list-images img {
   opacity: 0.2;
 }
+
+/*.partners-list::after {
+  content: " ";
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.1);
+}*/
 
 .partner-html:hover,
 .partner-html:focus,
@@ -564,11 +578,27 @@ p.about-us-statistics-title {
   padding-bottom: 115px;
 }
 
+.filters {
+  margin: 0;
+  margin-right: 140px;
+  width: 260px;
+}
+
 .filter-item {
   margin: 0;
   padding: 0;
+  margin-bottom: 50px;
 
   border: none;
+}
+
+.filter-price {
+  margin-bottom: 60px;
+}
+
+.grid-list,
+.features-list {
+  list-style: none;
 }
 
 .range-filter {
