@@ -115,8 +115,6 @@ input[type="radio"].visually-hidden {
 
 .basket-link {
   position: relative;
-
-  width: 160px;
 }
 
 .basket-link::before {
@@ -392,6 +390,8 @@ input[type="radio"].visually-hidden {
 }
 
 .about-us-list {
+  padding-left: 0;
+
   list-style: none;
   color: #283136;
 }
@@ -433,6 +433,8 @@ p.about-us-statistics-title {
 }
 
 .table-statistics-body td {
+  padding-top: 20px;
+
   line-height: 18px;
   color: #283136;
 }
@@ -464,15 +466,17 @@ p.about-us-statistics-title {
   opacity: 0.2;
 }
 
-/*.partners-list-images::after {
+.partners-list-images::after {
   content: " ";
   position: absolute;
-  bottom: -40px;
-  left: 0;
-  right: 0;
-  height: 2px;
+  top: 5px;
+  right: -46px;
+
+  width: 2px;
+  height: 55px;
+
   background-color: rgba(0, 0, 0, 0.1);
-}*/
+}
 
 .partner-html:hover,
 .partner-html:focus,
@@ -591,7 +595,7 @@ p.about-us-statistics-title {
   background-color: #e74246;
 }
 
-.social-button path:active {
+.social-button:active path {
   fill: #e37376;
 }
 
@@ -604,6 +608,10 @@ p.about-us-statistics-title {
 .friendly-header {
   font-size: 36px;
   line-height: 36px;
+}
+
+p.friendly-header {
+  margin-top: 0;
 }
 
 .friendly-body {
@@ -638,6 +646,11 @@ p.about-us-statistics-title {
 }
 
 /* catalog.html */
+
+.container-colums {
+  display: flex;
+  justify-content: space-between;
+}
 
 .page-title {
   margin-top: 80px;
@@ -825,11 +838,25 @@ p.about-us-statistics-title {
 }
 
 .catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 0;
+
   list-style: none;
 }
 
 .catalog-item {
+  width: 360px;
+  margin-bottom: 33px;
+
   background-color: #eeeeee;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.catalog-image {
+  padding-top: 41px;
 }
 
 .catalog-item h3 {
@@ -852,15 +879,29 @@ p.about-us-statistics-title {
 }
 
 .pagination-list {
+  display: flex;
+  width: 443px;
+  padding-left: 0;
+
   list-style: none;
 }
 
-.pagination-list a {
-  color: #000000;
-}
-
 .pagination-item a {
+  display: block;
+  min-width: 44px;
+  margin-right: 10px;
+  padding: 13px 0;
+
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+
   background-color: #eeeeee;
+  border: 3px solid black;
+  border-radius: 3px;
 }
 
 .pagination-item a:hover,
