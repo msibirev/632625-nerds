@@ -658,7 +658,7 @@ p.about-us-statistics-title {
 
 .filter-item {
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   padding: 0;
 
   border: none;
@@ -769,6 +769,11 @@ p.about-us-statistics-title {
 .grid-title {
   font-size: 18px;
   line-height: 30px;
+}
+
+.grid-list li,
+.features-list li {
+  margin-bottom: 25px;
 }
 
 .grid-block label {
