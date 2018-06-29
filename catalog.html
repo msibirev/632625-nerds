@@ -146,12 +146,12 @@
 
         <section class="catalog">
           <h2 class="visually-hidden">Список товаров</h2>
-          <h3 class="catalog-title uppercase">Сортировать:</h3>
 
           <div class="catalog-sort">
+            <h3 class="catalog-title uppercase">Сортировать:</h3>
             <ul class="sort-list">
               <li class="sort-item">
-                <a href="#" class="uppercase item-current">По цене</a>
+                <a href="#" class="uppercase sort-item-current">По цене</a>
               </li>
               <li class="sort-item">
                 <a href="#" class="uppercase">По типу</a>
@@ -162,8 +162,16 @@
             </ul>
 
             <div class="up-down-sort">
-              <a href="#" class="down-icon sort-current" aria-label="Сортировка по убыванию"></a>
-              <a href="#" class="up-icon" aria-label="Сортировка по возрастанию"></a>
+              <a href="#" class="down-icon sort-current" aria-label="Сортировка по убыванию">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                  <path fill="#231F20" d="M5.5 10L0 0h11" />
+                </svg>
+              </a>
+              <a href="#" class="up-icon" aria-label="Сортировка по возрастанию">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                  <path fill="#a6a6a6" d="M5.5 0L0 10h11z" />
+                </svg>
+              </a>
             </div>
 
           </div>
@@ -224,7 +232,7 @@
           </div>
 
           <ul class="pagination-list">
-            <li class="pagination-item pagination-item-current">
+            <li class="pagination-item-current">
               <a href="#" aria-label="Первая страница">1</a>
             </li>
             <li class="pagination-item">
