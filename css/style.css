@@ -98,17 +98,21 @@ input[type="radio"].visually-hidden {
 .site-navigation {
   display: flex;
   justify-content: space-around;
-  width: 440px;
+  width: 482px;
 }
 
 .site-navigation-current {
   border-bottom: 2px solid #fb565a;
 }
 
+a.site-navigation-current {
+  padding-bottom: 9px;
+}
+
 .site-navigation,
 .basket-navigation {
   margin: 0;
-  padding-top: 82px;
+  padding-top: 78px;
 
   list-style: none;
 }
@@ -159,7 +163,7 @@ input[type="radio"].visually-hidden {
 
 .presentation-item {
   display: none;
-  padding: 78px 0 80px 0;
+  padding: 71px 0 80px 0;
 }
 
 .presentation-item:nth-child(1) {
@@ -184,6 +188,8 @@ input[type="radio"].visually-hidden {
 }
 
 .presentation-button {
+  padding: 16px 0;
+
   background-color: #fb565a;
 }
 
@@ -286,14 +292,14 @@ input[type="radio"].visually-hidden {
 }
 
 .amenities h3 {
-  margin-top: 30px;
-  margin-bottom: 25px;
+  margin-top: 26px;
+  margin-bottom: 19px;
 
   font-size: 24px;
 }
 
 .amenities-item-text {
-  margin-bottom: 35px;
+  margin-bottom: 36px;
 
   color: #283136;
 }
@@ -371,13 +377,14 @@ input[type="radio"].visually-hidden {
 .about-us {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 75px;
+  padding-bottom: 50px;
 
   border-bottom: 2px solid #eeeeee;
 }
 
 .about-us-item-header {
-  margin-bottom: 40px;
+  margin-top: 34px;
+  margin-bottom: 33px;
 
   font-size: 45px;
   line-height: 45px;
@@ -387,6 +394,10 @@ input[type="radio"].visually-hidden {
   margin-bottom: 40px;
 
   color: #283136;
+}
+
+p.about-us-item-title {
+  margin-bottom: 23px;
 }
 
 .about-us-list {
@@ -418,7 +429,12 @@ input[type="radio"].visually-hidden {
 }
 
 .about-us-statistics img {
-  margin-bottom: 30px;
+  margin-bottom: 13px;
+  padding-left: 16px;
+}
+
+.table-statistics {
+  padding-left: 14px;
 }
 
 .table-statistics-header b {
@@ -429,11 +445,11 @@ input[type="radio"].visually-hidden {
 }
 
 p.about-us-statistics-title {
-  margin-bottom: 50px;
+  margin-bottom: 55px;
 }
 
 .table-statistics-body td {
-  padding-top: 20px;
+  padding-top: 15px;
 
   line-height: 18px;
   color: #283136;
@@ -492,9 +508,9 @@ p.about-us-statistics-title {
 .map {
   position: relative;
 
-  margin-top: 80px;
-  margin-bottom: 70px;
-  padding: 81px 0;
+  margin-top: 66px;
+  margin-bottom: 74px;
+  padding: 56px 0;
 }
 
 .map-image-wrapper {
@@ -511,13 +527,14 @@ p.about-us-statistics-title {
   width: 320px;
   min-height: 240px;
   padding-top: 47px;
+  padding-bottom: 18px;
 
   background-color: #ffffff;
 }
 
 .map-item-header {
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 23px;
   margin-left: 50px;
 
   font-size: 18px;
@@ -533,7 +550,7 @@ p.about-us-statistics-title {
 }
 
 .map-item-phone {
-  margin-bottom: 40px;
+  margin-bottom: 43px;
 }
 
 .map-item-button {
@@ -560,9 +577,6 @@ p.about-us-statistics-title {
 .social-list {
   display: flex;
   justify-content: space-between;
-  width: 260px;
-  margin: 0;
-  padding-left: 25px;
 
   list-style: none;
 }
@@ -612,11 +626,16 @@ p.about-us-statistics-title {
 
 p.friendly-header {
   margin-top: 0;
+  margin-bottom: -6px;
 }
 
 .friendly-body {
   line-height: 22px;
   color: #444444;
+}
+
+p.friendly-body {
+  margin-bottom: 75px;
 }
 
 .popup {
@@ -653,8 +672,8 @@ p.friendly-header {
 }
 
 .page-title {
-  margin-top: 80px;
-  padding-bottom: 115px;
+  margin-top: 70px;
+  padding-bottom: 107px;
 
   font-size: 55px;
   line-height: 55px;
@@ -684,6 +703,10 @@ p.friendly-header {
 .grid-list,
 .features-list {
   list-style: none;
+}
+
+.range-title {
+  padding-top: 25px;
 }
 
 .range-filter {
@@ -785,6 +808,7 @@ p.friendly-header {
   display: block;
 
   cursor: pointer;
+
   user-select: none;
 }
 
@@ -807,7 +831,7 @@ p.friendly-header {
 
 .grid-list li,
 .features-list li {
-  margin-bottom: 25px;
+  margin-bottom: 18px;
 }
 
 .grid-block label {
@@ -821,6 +845,8 @@ p.friendly-header {
 }
 
 .show-button {
+  width: 260px;
+
   color: #000000;
 
   background-color: #eeeeee;
