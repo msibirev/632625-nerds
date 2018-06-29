@@ -1028,3 +1028,7 @@ a.sort-item-current:focus {
   border: 3px solid #dbdbdb;
   border-radius: 3px;
 }
+
+.pagination-next {
+  width: 260px;
+}
