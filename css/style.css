@@ -49,6 +49,10 @@ input[type="radio"].visually-hidden {
   padding: 0 20px;
 }
 
+.main-footer {
+  padding-top: 13px;
+}
+
 .uppercase,
 .button {
   text-transform: uppercase;
@@ -446,6 +450,7 @@ p.about-us-item-title {
 
 p.about-us-statistics-title {
   margin-bottom: 55px;
+  text-align: center;
 }
 
 .table-statistics-body td {
@@ -466,7 +471,7 @@ p.about-us-statistics-title {
   justify-content: space-between;
   margin-top: 48px;
   margin-right: 43px;
-  margin-bottom: 48px;
+  margin-bottom: 41px;
   margin-left: 31px;
   padding-left: 0;
 
@@ -489,13 +494,17 @@ p.about-us-statistics-title {
 .partners-list-images::after {
   content: " ";
   position: absolute;
-  top: 5px;
+  top: 20px;
   right: -46px;
 
   width: 2px;
   height: 55px;
 
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+.partners-list-images:nth-of-type(4)::after {
+  display: none;
 }
 
 .partner-html:hover,
@@ -526,6 +535,7 @@ p.about-us-statistics-title {
 
   width: 100%;
   height: 100%;
+  margin-top: 14px;
 }
 
 .container-map {
@@ -534,8 +544,8 @@ p.about-us-statistics-title {
 
 .map-item {
   width: 320px;
-  min-height: 240px;
-  padding-top: 47px;
+  min-height: 225px;
+  padding-top: 62px;
   padding-bottom: 18px;
 
   background-color: #ffffff;
@@ -1004,8 +1014,8 @@ a.sort-item-current:focus {
   text-align: center;
 
   background-color: #eeeeee;
-  /*display: none;*/
 }
+
 
 /*.hover-block:hover {
   position: absolute;
@@ -1067,7 +1077,7 @@ a.sort-item-current:focus {
   text-decoration: none;
 
   background-color: #eeeeee;
-  border: 3px solid #eeeeee;
+
   border-radius: 3px;
 }
 
