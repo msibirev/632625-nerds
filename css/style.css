@@ -1070,9 +1070,10 @@ a.sort-item-current:focus {
 
   background-color: #ffffff;
   border-radius: 50%;
+  box-shadow: 23px 0 0 0 #ffffff, 46px 0 0 0 #ffffff;
 }
 
-.catalog-item::after {
+/*.catalog-item::after {
   content: " ";
   position: absolute;
   bottom: 595px;
@@ -1084,7 +1085,7 @@ a.sort-item-current:focus {
   background-color: #ffffff;
   border-radius: 50%;
   box-shadow: 23px 0 0 0 #ffffff;
-}
+}*/
 
 .hover-block {
   position: absolute;
