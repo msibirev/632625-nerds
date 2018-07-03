@@ -908,7 +908,7 @@ p.friendly-body {
   padding: 8px 10px;
 
   font-size: 16px;
-  font-family: Roboto, Arial, sans-serif;
+
   text-align: center;
   color: #283136;
 
@@ -1230,7 +1230,7 @@ a.sort-item-current:focus {
 
   background-color: #ffffff;
   border-radius: 3px;
-  box-shadow: inset 0 0 0 2px#dbdbdb;
+  box-shadow: inset 0 0 0 1.5px#dbdbdb;
 }
 
 .pagination-next {
