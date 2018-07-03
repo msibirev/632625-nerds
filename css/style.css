@@ -50,7 +50,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-footer {
-  padding-top: 0px;
+  padding-top: 0;
 }
 
 .uppercase,
@@ -124,15 +124,17 @@ a.site-navigation-current {
 }
 
 .basket-navigation {
-  width: 200px;
-  padding: 0;
   display: flex;
   justify-content: flex-end;
+  width: 200px;
+  padding: 0;
+  padding-top: 10px;
 }
 
 .site-navigation,
 .basket-navigation {
   margin: 0;
+
   list-style: none;
 }
 
@@ -500,9 +502,9 @@ p.about-us-statistics-title {
   position: relative;
 
   display: flex;
-  width: 260px;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  width: 260px;
 }
 
 .partners-list-images img {
@@ -602,9 +604,9 @@ p.about-us-statistics-title {
 }
 
 .map-item-button {
-  padding: 15px 0;
   width: 220px;
   margin-left: 50px;
+  padding: 15px 0;
 
   background-color: #fb565a;
 }
@@ -693,12 +695,12 @@ p.friendly-body {
   left: 25%;
   z-index: 2;
 
+  display: none;
   max-width: 820px;
   padding: 70px 100px 80px;
 
   background-color: #ffffff;
-  box-shadow: 0px 15px 40px 0px rgba(0, 1, 1, 0.75);
-  display: none;
+  box-shadow: 0 15px 40px 0 rgba(0, 1, 1, 0.75);
 }
 
 .popup h2 {
@@ -736,8 +738,8 @@ p.friendly-body {
 
 .popup-form-email {
   display: flex;
-  width: 40%;
   flex-direction: column;
+  width: 40%;
 }
 
 .popup-form-letter {
