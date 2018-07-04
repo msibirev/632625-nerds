@@ -164,12 +164,12 @@
             <div class="up-down-sort">
               <a href="#" class="down-icon sort-current" aria-label="Сортировка по убыванию">
                 <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-                  <path fill="#231F20" d="M5.5 10L0 0h11" />
+                  <path fill="#000000" d="M5.5 10L0 0h11" />
                 </svg>
               </a>
               <a href="#" class="up-icon" aria-label="Сортировка по возрастанию">
                 <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-                  <path fill="#a6a6a6" d="M5.5 0L0 10h11z" />
+                  <path fill="#000000" d="M5.5 0L0 10h11z" />
                 </svg>
               </a>
             </div>
@@ -276,11 +276,11 @@
       <h2 class="visually-hidden">Наше местоположение</h2>
 
       <div class="map-image-wrapper">
-        <iframe class="map-image" width="100%" height="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=191186%2C%20%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%2C%20%D1%83%D0%BB.%20%D0%91.%20%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F%2C%20%D0%B4.%2019%2F8&key=AIzaSyATtEx-ZEEBRka9pPjpk1GOdfVetwq6Pos"
+        <iframe class="map-image" src="https://www.google.com/maps/embed/v1/place?q=191186%2C%20%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%2C%20%D1%83%D0%BB.%20%D0%91.%20%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F%2C%20%D0%B4.%2019%2F8&key=AIzaSyATtEx-ZEEBRka9pPjpk1GOdfVetwq6Pos"
           allowfullscreen></iframe>
       </div>
 
-      <div class="container">
+      <div class="container container-map">
 
         <div class="map-item">
           <p class="map-item-header uppercase">
@@ -350,7 +350,7 @@
         <span>
           <b>Текст письма:</b>
         </span>
-        <textarea name="letter-text" id="letter"></textarea>
+        <textarea name="letter-text" id="letter" placeholder="В свободной форме"></textarea>
       </label>
     </form>
     <a href="#" class="button popup-send-button">Отправить</a>
