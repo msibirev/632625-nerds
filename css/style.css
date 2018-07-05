@@ -681,6 +681,7 @@ p.about-us-statistics-title {
 .friendly-message {
   width: 560px;
   padding-right: 200px;
+  padding-top: 4px;
 }
 
 
@@ -691,7 +692,7 @@ p.about-us-statistics-title {
 
 p.friendly-header {
   margin-top: 0;
-  margin-bottom: -6px;
+  margin-bottom: -5px;
 }
 
 .friendly-body {
@@ -753,6 +754,7 @@ p.friendly-body {
 
 .popup-close-button:active {
   opacity: 0.1;
+  outline: 0;
 }
 
 .popup-form {
@@ -788,6 +790,28 @@ p.friendly-body {
 
   border: 2px solid #d7dcde;
   border-radius: 2px;
+  opacity: 0.6;
+}
+
+.popup-form input[type="text"]:hover,
+.popup-form input[type="email"]:hover,
+.popup-form textarea:hover {
+  border: 2px solid #b4b9bb;
+  opacity: 0.8;
+}
+
+.popup-form input[type="text"]:focus,
+.popup-form input[type="email"]:focus,
+.popup-form textarea:focus {
+  border: 2px solid #000000;
+  opacity: 1;
+  outline: 0;
+}
+
+.popup-form input[type="text"]:invalid,
+.popup-form input[type="email"]:invalid,
+.popup-form textarea:invalid {
+  border: 2px solid #e74246;
 }
 
 .popup-form input[type="text"],
@@ -840,7 +864,6 @@ p.friendly-body {
 
 .filter-item {
   margin: 0;
-  margin-bottom: 25px;
   padding: 0;
 
   border: none;
@@ -853,6 +876,14 @@ p.friendly-body {
 .grid-list,
 .features-list {
   list-style: none;
+  color: #283136;
+  margin-top: 17px;
+  margin-bottom: 44px;
+  padding-left: 37px;
+}
+
+.features-list {
+  margin-bottom: 47px;
 }
 
 .range-title {
@@ -965,7 +996,7 @@ p.friendly-body {
   content: " ";
   position: absolute;
   top: 0;
-  left: -39px;
+  left: -36px;
 
   width: 23px;
   height: 23px;
@@ -978,7 +1009,7 @@ p.friendly-body {
   content: " ";
   position: absolute;
   top: 0;
-  left: -39px;
+  left: -36px;
 
   width: 25px;
   height: 25px;
@@ -998,7 +1029,7 @@ p.friendly-body {
   content: " ";
   position: absolute;
   top: 0;
-  left: -39px;
+  left: -36px;
 
   width: 25px;
   height: 25px;
@@ -1011,7 +1042,7 @@ p.friendly-body {
   content: " ";
   position: absolute;
   top: 0;
-  left: -39px;
+  left: -36px;
 
   width: 27px;
   height: 23px;
@@ -1039,7 +1070,7 @@ p.friendly-body {
 
 .grid-list li,
 .features-list li {
-  margin-bottom: 18px;
+  margin-bottom: 17px;
 }
 
 .grid-block label {
@@ -1151,7 +1182,6 @@ a.sort-item-current:focus {
 .catalog-item {
   position: relative;
 
-  width: 360px;
   margin-bottom: 25px;
 }
 
@@ -1175,7 +1205,7 @@ a.sort-item-current:focus {
   bottom: 7px;
   left: 0;
 
-  padding: 32px 80px 43px;
+  padding: 32px 72px 43px;
 
   text-align: center;
 
@@ -1190,10 +1220,6 @@ a.sort-item-current:focus {
 .catalog-item:hover .hover-block {
   opacity: 1;
 }
-/*.hover-block:hover,
-.hover-block:focus {
-  opacity: 1;
-}*/
 
 .catalog-image {
   padding-top: 41px;
@@ -1222,11 +1248,31 @@ a.sort-item-current:focus {
   width: 200px;
 
   background-color: #fb565a;
+  display: inline-block;
+  padding: 13px 0;
+
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  border: none;
+  border-radius: 3px;
 }
+
+
 
 .catalog-button:hover,
 .catalog-button:focus {
   background-color: #e74246;
+}
+
+.catalog-button:active {
+  opacity: 1;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+  background-color: #d7373b;
 }
 
 .pagination-list {
