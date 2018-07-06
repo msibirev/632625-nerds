@@ -301,6 +301,8 @@ a.site-navigation-current {
 }
 
 .amenities {
+  position: relative;
+
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
@@ -311,7 +313,8 @@ a.site-navigation-current {
 
 .amenities-item {
   width: 300px;
-  margin-right: 100px;
+  margin-right: 60px;
+  padding-top: 146px;
 }
 
 .amenities h3 {
@@ -323,31 +326,43 @@ a.site-navigation-current {
 
 .amenities-item-text {
   margin-bottom: 36px;
+  padding-right: 19px;
 
   color: #283136;
 }
 
-.web-sites,
-.apps,
-.presentations {
+.web-sites-item::before {
+  content: " ";
+  position: absolute;
+  top: 82px;
+
   width: 300px;
   height: 146px;
 
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.web-sites {
   background-color: #fb565a;
   background-image: url(../img/illustration-monitor.jpg);
 }
 
-.apps {
+.apps-item::before {
+  content: " ";
+  position: absolute;
+  top: 82px;
+
+  width: 300px;
+  height: 146px;
+
   background-color: #00ca74;
   background-image: url(../img/illustration-phones.jpg);
 }
 
-.presentations {
+.presentations-item::before {
+  content: " ";
+  position: absolute;
+  top: 82px;
+
+  width: 300px;
+  height: 146px;
+
   background-color: #efc849;
   background-image: url(../img/illustration-schedule.jpg);
 }
@@ -413,6 +428,7 @@ a.site-navigation-current {
 .about-us-item-header {
   margin-top: 34px;
   margin-bottom: 33px;
+  padding-right: 6px;
 
   font-size: 45px;
   line-height: 45px;
@@ -420,6 +436,7 @@ a.site-navigation-current {
 
 .about-us-item-body {
   margin-bottom: 40px;
+  padding-right: 96px;
 
   color: #283136;
 }
@@ -483,7 +500,7 @@ p.about-us-item-title {
 }
 
 p.about-us-statistics-title {
-  margin-bottom: 55px;
+  margin-bottom: 50px;
   padding-left: 33px;
 }
 
@@ -604,6 +621,7 @@ p.about-us-statistics-title {
 .map-item-address,
 .map-item-phone {
   margin-left: 51px;
+  padding-right: 55px;
 
   line-height: 18px;
   color: #666666;
