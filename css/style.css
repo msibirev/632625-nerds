@@ -725,8 +725,8 @@ p.friendly-body {
   left: 50%;
   z-index: 999;
 
-  max-width: 820px;
-  padding: 70px 50px 80px 100px;
+  width: 960px;
+  height: 585px;
 
   background-color: #ffffff;
   box-shadow: 0 15px 40px 0 rgba(0, 1, 1, 0.75);
@@ -734,26 +734,29 @@ p.friendly-body {
 }
 
 .popup-show {
-  display: none;
+  /*display: none;*/
 }
 
 .popup h2 {
   margin-top: 0;
+  margin-bottom: 42px;
+  padding-top: 63px;
+  padding-left: 100px;
 
   font-size: 45px;
   line-height: 45px;
 }
 
 .popup span {
-  padding-bottom: 10px;
+  padding-bottom: 7px;
 
   line-height: 18px;
 }
 
 .popup-close-button {
   position: absolute;
-  top: 83px;
-  right: 83px;
+  top: 76px;
+  right: 90px;
 
   width: 21px;
   height: 21px;
@@ -779,6 +782,7 @@ p.friendly-body {
 .popup-form {
   display: flex;
   flex-wrap: wrap;
+  padding-left: 100px;
 }
 
 .popup-form-name {
@@ -791,12 +795,12 @@ p.friendly-body {
   display: flex;
   flex-direction: column;
   width: 40%;
-  margin-left: 80px;
+  margin-left: 56px;
 }
 
 .popup-form-letter {
   width: 100%;
-  margin-top: 35px;
+  margin-top: 28px;
 }
 
 .popup-form input[type="text"],
@@ -870,11 +874,16 @@ p.friendly-body {
 
 .popup-form textarea {
   width: 760px;
-  margin-top: 10px;
-  margin-bottom: 47px;
+  height: 116px;
+  margin-top: 8px;
+  margin-bottom: 43px;
+  padding-top: 6px;
 }
 
 .popup-send-button {
+  width: 27%;
+  margin-left: 100px;
+
   background-color: #fb565a;
 }
 
@@ -956,7 +965,7 @@ p.friendly-body {
   position: relative;
 
   height: 41px;
-  margin-bottom: 15px;
+  margin-bottom: 17px;
   padding-top: 39px;
   padding-right: 20px;
   padding-left: 20px;
@@ -1016,7 +1025,7 @@ p.friendly-body {
 
 .price-controls input {
   width: 60px;
-  margin-left: 10px;
+  margin-left: 8px;
   padding: 8px 10px;
 
   font-size: 16px;
@@ -1026,6 +1035,14 @@ p.friendly-body {
   background: #f1f1f1;
   border: none;
   border-radius: 5px;
+}
+
+.price-controls input[type="number"]::-webkit-outer-spin-button,
+.price-controls input[type="number"]::-webkit-inner-spin-button {
+  display: none;
+  margin: 0;
+
+  -webkit-appearance: none;
 }
 
 .max-price {
