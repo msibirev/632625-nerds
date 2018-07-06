@@ -734,7 +734,7 @@ p.friendly-body {
 }
 
 .popup-show {
-  /*display: none;*/
+  display: none;
 }
 
 .popup h2 {
