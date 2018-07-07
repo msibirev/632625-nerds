@@ -727,7 +727,7 @@ p.friendly-body {
   z-index: 999;
 
   width: 960px;
-  height: 585px;
+  height: 590px;
 
   background-color: #ffffff;
   box-shadow: 0 15px 40px 0 rgba(0, 1, 1, 0.75);
@@ -749,7 +749,7 @@ p.friendly-body {
 }
 
 .popup span {
-  padding-bottom: 7px;
+  padding-bottom: 10px;
 
   line-height: 18px;
 }
@@ -882,8 +882,8 @@ p.friendly-body {
 }
 
 .popup-send-button {
-  width: 27%;
-  margin-left: 100px;
+  width: 30%;
+  padding: 14px 0;
 
   background-color: #fb565a;
 }
@@ -1307,10 +1307,12 @@ a.sort-item-current:focus {
   opacity: 0;
 }
 
-
-
 .catalog-item:hover .hover-block {
   opacity: 1;
+}
+
+.hover-link {
+  color: #000000;
 }
 
 .catalog-image {
