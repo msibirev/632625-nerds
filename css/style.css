@@ -628,7 +628,8 @@ p.about-us-statistics-title {
 }
 
 .map-item-phone {
-  margin-bottom: 40px;
+  margin-top: 19px;
+  margin-bottom: 38px;
 }
 
 .map-item-button {
@@ -1038,7 +1039,7 @@ p.friendly-body {
 }
 
 .price-controls input[type="number"]::-webkit-outer-spin-button,
-.price-controls input[type="number"]::-webkit-inner-spin-button, {
+.price-controls input[type="number"]::-webkit-inner-spin-button {
   display: none;
   margin: 0;
 
@@ -1048,6 +1049,7 @@ p.friendly-body {
 .price-controls input[type="number"] {
   -moz-appearance: textfield;
 }
+
 .price-controls input[type="number"]:hover,
 .price-controls input[type="number"]:focus {
   -moz-appearance: textfield;
