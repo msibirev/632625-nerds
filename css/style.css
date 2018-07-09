@@ -1299,7 +1299,7 @@ a.sort-item-current:focus {
   bottom: 7px;
   left: 0;
 
-  padding: 32px 60px 43px;
+  padding: 27px 60px 43px;
 
   text-align: center;
 
@@ -1330,11 +1330,17 @@ a.sort-item-current:focus {
 }
 
 .catalog-item h3 {
+  margin: 0;
+  padding-bottom: 16px;
+
   font-size: 18px;
   line-height: 30px;
 }
 
 .catalog-item p {
+  margin: 0;
+  padding-bottom: 30px;
+
   line-height: 18px;
   color: #666666;
 }
@@ -1342,7 +1348,8 @@ a.sort-item-current:focus {
 .catalog-button {
   display: inline-block;
   width: 200px;
-  padding: 13px 0;
+  margin-bottom: 1px;
+  padding: 15px 0;
 
   font-size: 16px;
   line-height: 18px;
