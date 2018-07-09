@@ -1304,6 +1304,11 @@ a.sort-item-current:focus {
   bottom: 7px;
   left: 0;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  max-height: 100%;
   padding: 27px 60px 43px;
 
   text-align: center;
@@ -1344,7 +1349,8 @@ a.sort-item-current:focus {
 
 .catalog-item p {
   margin: 0;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
+  overflow: auto;
 
   line-height: 18px;
   color: #666666;
