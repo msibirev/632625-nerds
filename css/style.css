@@ -744,7 +744,7 @@ p.friendly-body {
 .popup h2 {
   margin-top: 0;
   margin-bottom: 42px;
-  padding-top: 63px;
+  padding-top: 67px;
   padding-left: 100px;
 
   font-size: 45px;
@@ -752,7 +752,7 @@ p.friendly-body {
 }
 
 .popup span {
-  padding-bottom: 10px;
+  padding-bottom: 6px;
 
   line-height: 18px;
 }
@@ -1281,7 +1281,7 @@ a.sort-item-current:focus {
 .catalog-item {
   position: relative;
 
-  margin-bottom: 25px;
+  margin-bottom: 32px;
 }
 
 .catalog-item::before {
@@ -1298,10 +1298,14 @@ a.sort-item-current:focus {
   box-shadow: 23px 0 0 0 #ffffff, 46px 0 0 0 #ffffff;
 }
 
+.catalog-item a {
+  display: block;
+}
+
 .hover-block {
   position: absolute;
   right: 0;
-  bottom: 7px;
+  bottom: 0;
   left: 0;
 
   display: flex;
@@ -1315,6 +1319,8 @@ a.sort-item-current:focus {
 
   background-color: #eeeeee;
   opacity: 0;
+
+  transition: 0.2s ease;
 }
 
 .catalog-item:hover .hover-block {
@@ -1326,6 +1332,7 @@ a.sort-item-current:focus {
 }
 
 .catalog-image {
+  display: block;
   padding-top: 41px;
 
   background-color: #eeeeee;
