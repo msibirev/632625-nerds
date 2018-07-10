@@ -1098,9 +1098,9 @@ p.friendly-body {
   opacity: 0.4;
 }
 
-.filter-input-radio:hover + label::before,
+.filter-input-radio + label:hover::before,
 .filter-input-radio:focus + label::before,
-.filter-input-checkbox:hover + label::before,
+.filter-input-checkbox + label:hover::before,
 .filter-input-checkbox:focus + label::before {
   opacity: 1;
 }
@@ -1355,11 +1355,12 @@ a.sort-item-current:focus {
 }
 
 .catalog-item p {
+  width: 100%;
   margin: 0;
   margin-bottom: 30px;
   overflow: auto;
 
-  line-height: 18px;
+  line-height: 1.127;
   color: #666666;
 }
 
